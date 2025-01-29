@@ -2,7 +2,7 @@ const CACHE_NAME = "pwa-cache-v1";
 const urlsToCache = [
   "/",
   "/index.html",
-  "/assets/src/resources/assets/images/static/icn_oky.81ee4fa9e2e79c5c2e559047e17cfd90.png",
+  "assets/src/resources/assets/images/static/icn_oky.81ee4fa9e2e79c5c2e559047e17cfd90@2x.png",
  
 ];
 
