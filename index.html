@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Link Manifest File -->
+    <link rel="manifest" href="/manifest.json">
     <title>Oky Tanzania</title>
     <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
     <style id="expo-reset">
@@ -33,5 +35,13 @@
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
   <script src="/_expo/static/js/web/AppEntry-29a5ad51d12aad48f5e4aca326636d23.js" defer></script>
+  <!-- Add Service Worker Script -->
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/service-worker.js")
+      .then((reg) => console.log("Service Worker Registered!", reg))
+      .catch((err) => console.log("Service Worker Failed!", err));
+  }
+</script>
 </body>
 </html>
