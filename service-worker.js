@@ -2,8 +2,9 @@ const CACHE_NAME = "pwa-cache-v1";
 const urlsToCache = [
   "/",
   "/index.html",
-  "assets/src/resources/assets/images/static/icn_oky.81ee4fa9e2e79c5c2e559047e17cfd90@2x.png",
- 
+  "/icons/icon-192x192.png",
+  "/icons/icon-512x512.png"
+
 ];
 
 // Install Service Worker
